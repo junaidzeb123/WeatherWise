@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://api.openweathermap.org/data/2.5/weather?q=Abbottabad&appid=05c3cce76f02787d947e4e07c7f51f8c&units=metric -->
+<!-- 05c3cce76f02787d947e4e07c7f51f8c -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>WeatherWise</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="inner-main">
+
+            <div class="left">
+
+                <div class="left-upper">
+                    <form action="submit" class="search-bar">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" placeholder="Search Your City">
+                    </form>
+
+                    <div class="left-upperMiddle">
+                        <div class="location">
+                            <div>
+                                <i class="fa-solid fa-location-arrow"></i>
+                                <div class="city-name">New-York USA</div>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-arrow-up"></i>
+                                <span class="sunrise">19:14</span>
+                            </div>
+                        </div>
+
+                        <div class="data">
+                            <div>
+                                <div class="today">Today 28 Sept</div>
+                            </div>
+
+                            <div>
+                                <div class="">
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                    <span class="sunset">19:32</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-temprature">
+                        <div class="main-comp">
+                            <i class="icons fa-solid fa-less-than"></i>
+                            <h1> 27 <sup>o</sup></h1>
+                            <i class="icons fa-solid fa-greater-than"></i>
+                        </div>
+
+                     
+                    </div>
+                </div>
+
+                <div class="left-bottom">
+
+                </div>
+            </div>
+
+            <div class="right">
+
+                <div class="right-upper">
+                    
+                    <div class="right-upper-text">
+                        <span class="upperText">Welcome back to  WeatherWise!</span>
+                        <span> Check out today's Wheather information</span>
+                    </div>
+                    <div class="upcoming">
+               
+
+
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="right-bottom">
+                    <h3>More Details of today's wheather</h3>
+
+                    <div class="moreDetails">
+
+                        <div class="box humadity">
+                            <div class="box-icons">
+                                <span>Humadity</span>
+                                <img src="img/humidity.png" class="upcoming-icons" width="20px">
+                            </div>
+
+                            <span>82%bad</span>
+
+                            <div class="progress-section">
+                                <div class="progress-bar">
+                                    <span>good</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <span>normal</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <span>bad</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="progress-for-mobile">
+                                <div class="progress-bar">
+                                                              
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box wind">
+                            <div class="box-icons">
+                                <span>Wind</span>
+                                <img src="img/wind.png" class="upcoming-icons" width="20px">
+                            </div>
+
+                            <span class="value">8 KM/h</span>
+                            <div class="progress-section">
+                                <div class="progress-bar">
+                                    <span>0</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <span>10</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <span>20</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <span>30</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <span>40</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <span>50</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-for-mobile">
+                                <div class="progress-bar">
+                                                                   
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" box Precipitatin">
+                            <div class="box-icons">
+                                <span>Pressure</span>
+                               <img src="img/weather.png"  class="upcoming-icons"width="20px">
+                            </div>
+                            <span class="value">1.4cm</span>
+                            <div class="progress-section">
+                                <div class="progress-bar">
+                                    <span>0 - 200</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <span>200 - 400</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <span>400 - 600</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <span>600 - 800</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <span>800 - 1000</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                               
+                              
+                            </div>
+                            <div class="progress-for-mobile">
+                                <div class="progress-bar">
+                                                                    
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box Uv-Index">
+                            <div class="box-icons">
+
+                                <span >UV Index</span>
+                                <i class="fa-solid fa-sun upcoming-icons"></i>
+                            </div>
+                            <span class="value">4 medium</span>
+
+                            <div class="progress-section">
+                                <div class="progress-bar">
+                                    <span>0-2</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <span>3-5</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <span>6-7</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <span>8-10</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <span>11+</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="progress-for-mobile">
+                                <div class="progress-bar">
+                                                                 
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box Feels-like">
+                            <div class="box-icons">
+                                <span >Feels like</span>
+                                <img src="img/cloudy.png" class="upcoming-icons" width="20px">
+
+                            </div>
+                            <span class="value">30 <sup>o</sup></span>
+                            <div class="progress-section">
+                                <div class="progress-bar">
+                                    <div>
+                                        <span>0 <sup>o</sup></span>
+                                        <span>50 <sup>o</sup></span>
+                                        <span>100 <sup>o</sup></span>
+                                    </div>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="progress-for-mobile">
+                                <div class="progress-bar">
+                                                                   
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box chance-of-rain">
+                            <div class="box-icons">
+                                <span> Dew </span>
+                               <img src="img/rain.png" class="upcoming-icons" width="20px">
+                            </div>
+                            <span class="value">42%</span>
+                            <div class="progress-section">
+                                <div class="progress-bar">
+                                    <div>
+                                        <span>0%</span>
+                                        <span>20%</span>
+                                        <span>50%</span>
+                                        <span>75%</span>
+                                        <span>100%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-for-mobile">
+                                <div class="progress-bar">
+                                                                   
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+        </div>
+</body>
+
+</html>

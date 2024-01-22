@@ -1,0 +1,427 @@
+:root {
+    font-size: 16px;
+
+}
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    background-color: #B5D8FF;
+    width: 100vw;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inner-main {
+    background-color: #5C9CE5;
+    width: 85%;
+    height: 85%;
+    border-radius: 5%;
+    display: flex;
+}
+
+
+.inner-main .left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.left-upper {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.location {
+    display: flex;
+    justify-content: space-around;
+    height: 75%;
+    opacity: 0.9;
+}
+
+.city-name {
+    margin-left: 8px;
+    font-size: 1.3rem;
+}
+
+.today {
+    font-size: 0.7rem;
+}
+
+.location div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.data {
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.9;
+}
+
+.data>div>div {
+    display: inline-block;
+    margin-left: 48px;
+}
+
+.main-temprature {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-comp {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.main-comp+div {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.main-temprature h1 {
+    font-size: 500%;
+}
+
+/* seach bar */
+.left-upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.search-bar {
+    margin: 0px auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar>input {
+    border: none;
+    outline: none;
+    padding: 0.9rem;
+    width: 80%;
+    border-radius: 0px 25px 25px 0px;
+    background-color: #E4F1FF;
+}
+
+.search-bar>button {
+    border: none;
+    outline: none;
+    padding: 0.9rem;
+    width: 15%;
+    border-radius: 25px 0px 0px 25px;
+    background-color: #E4F1FF;
+}
+
+/*  */
+.inner-main .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+    background-color: #E4F1FF;
+    border-radius: 5%;
+    color: rgb(24, 19, 19);
+}
+
+.right-upper {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+
+
+.right .upcoming {
+    width: 90%;
+    height: 70%;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    font-size: 0.1rem;
+
+}
+
+
+
+.right-upper-text {
+    align-self: first baseline;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+
+
+
+
+.right-upper-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*  */
+.right-bottom {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    width: 30%;
+    height: 43%;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+    justify-content: space-around;
+}
+
+.box>span {
+    display: block;
+    width: fit-content;
+    margin: 0px auto;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.box-icons {
+    width: 70%;
+    margin: 3px auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.moreDetails {
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+
+/*  */
+.line-main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    height: 30%;
+}
+
+.line {
+    height: 100%;
+    border-left: 1px solid black;
+}
+
+.progress-section {
+    display: flex;
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+}
+
+.humadity .progress-bar {
+    width: 18%;
+}
+
+.wind .progress-bar {
+    width: 10%;
+}
+
+.Precipitatin .progress-bar {
+    width: 17%;
+    font-size: 0.7em;
+}
+
+.Uv-Index .progress-bar {
+    width: 10%;
+}
+
+.Feels-like .progress-bar {
+    width: 70%;
+}
+
+.Feels-like .progress-bar div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.chance-of-rain .progress-bar {
+    width: 70%;
+}
+
+.chance-of-rain .progress-bar div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress {
+    background-color: #DCDCDC;
+    width: 100%;
+    height: 8px;
+    border-radius: 15px;
+}
+
+.progress div {
+    width: 33%;
+    height: 8px;
+    background-color: #5C9CE5;
+    border-radius: 15px;
+}
+
+.icons{
+    margin: auto;
+}
+
+.progress-for-mobile{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    :root {
+        font-size: 13px;
+    }
+    
+}
+
+/* meadia query */
+@media screen and (max-width: 600px) {
+:root {
+    font-size: 13px;
+}
+.progress-section{
+    display: none;
+}
+
+    
+.humadity .progress-bar {
+    width: 70%;
+}
+
+.wind .progress-bar {
+    width: 70%;
+}
+
+.Precipitatin .progress-bar {
+    width: 70%;
+}
+
+.Uv-Index .progress-bar {
+    width: 70%;
+}
+
+.Feels-like .progress-bar {
+    width: 70%;
+}
+
+.chance-of-rain .progress-bar {
+    width: 70%;
+}
+
+.progress-for-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.progress-bar{
+    width: 100%;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.inner-main {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.inner-main .left {
+    width: 100%;
+    height: 30%;
+    flex-direction: column;
+    /* justify-content: center; */
+
+}
+
+
+.main-temprature h1 {
+    font-size: 562%;
+    margin-top: 0px;
+}
+
+.left-upper {
+    height: 100%;
+}
+
+.left-upperMiddle {
+    width: 100%;
+    height: 20%;
+    margin-bottom: 1rem;
+    flex-direction: row;
+    order: 1;
+    justify-content: center;
+}
+
+.inner-main .right {
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.inner-main {
+    border-radius: 0px;
+}
+
+
+.box-icons{
+    justify-content: center;
+}
+.box{
+    height: 30%;
+}
+}
